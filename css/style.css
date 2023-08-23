@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+.header{
+    color: #0a0a0a;
+    margin: 0px 200px;
+    height: 60px
+}
+.logo{
+    float: left;
+    padding: 5px;
+}
+.links{
+    float: right;
+    text-align: center;
+    margin: 15px 0px;
+}
+.links ul li{
+    display: inline;
+    margin: 5px;
+}
+.links ul li a{
+    font-size: large;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #0a0a0a;
+}
+.bg-img{
+    background-image: url(../image/background-layer.png);
+}
+.footer{
+    background-color: #139139;
+    padding: 30px;
+    color: white;
+}
+.copyright{
+    margin-left: 200px;
+    margin-bottom: 10px
+    text-align: center;
+    float: left;
+}
+.social-links{
+    margin-right: 200px;
+    float: right;
+}
