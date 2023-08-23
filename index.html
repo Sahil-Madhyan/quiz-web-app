@@ -1,36 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inventrom Private Ltd</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <div class="logo">
-        <img src="./image/logo.png" alt="Inventrom Logo" />
-      </div>
-      <div class="links">
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="main">
-      <div class="bg-img">
-        <div class="text">
-          <div class="info"></div>
-          <div class="link"></div>
+<html>
+    <head>
+        <title>Quiz Game</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Quiz Game</h1>
+            <div class="progress-bar" ></div>
+            <div class="quiz-slide">
+                <h2>Question 1</h2>
+                <p>What does HTML stand for?</p>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q1" value="choice1" /> Hyper
+                        Text Markup Language
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="choice2" />
+                        Hyperlinks and Text Markup Language
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="choice3" /> Home
+                        Tool Markup Language
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="choice4" /> Hyper
+                        Text Markup Leveler
+                    </label>
+                </div>
+            </div>
+            <div class="quiz-slide">
+                <h2>Question 2</h2>
+                <p>Which tag is used to define an unordered list in HTML?</p>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q2" value="choice1" />
+                        <code>&lt;ol&gt;</code>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="choice2" />
+                        <code>&lt;ul&gt;</code>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="choice3" />
+                        <code>&lt;li&gt;</code>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="choice4" />
+                        <code>&lt;list&gt;</code>
+                    </label>
+                </div>
+            </div>
+            <div class="quiz-slide">
+                <h2>Question 3</h2>
+                <p>
+                    Which property is used to change the background color of an
+                    element in CSS?
+                </p>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q3" value="choice1" />
+                        background-color
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="choice2" /> color
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="choice3" />
+                        text-color
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="choice4" />
+                        bg-color
+                    </label>
+                </div>
+            </div>
+            <div class="quiz-slide">
+                <h2>Question 4</h2>
+                <p>
+                    Which programming language is commonly used for web
+                    development?
+                </p>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q4" value="choice1" /> Java
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="choice2" /> Python
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="choice3" />
+                        JavaScript
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="choice4" /> C++
+                    </label>
+                </div>
+            </div>
+            <div class="quiz-slide">
+                <h2>Question 5</h2>
+                <p>
+                    What is the purpose of the <code>&lt;script&gt;</code> tag
+                    in HTML?
+                </p>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="q5" value="choice1" /> To
+                        define a style for an HTML element
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="choice2" /> To
+                        create a new web page
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="choice3" /> To
+                        define a client-side script
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="choice4" /> To
+                        define a section in an HTML document
+                    </label>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+                <button class="submit">Submit</button>
+            </div>
+            
+            <div class="result" style="display: none">
+                <h2>Quiz Result</h2>
+                <p>
+                    You scored <strong><span id="score"></span></strong> 
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="copyright">Copyright &copy; 2023 Inventrom</div>
-      <div class="social-links">social-links</div>
-    </div>
-  </body>
+    </body>
+    <script src="./js/script.js"></script>
 </html>
