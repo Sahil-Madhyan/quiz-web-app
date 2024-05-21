@@ -1,87 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: cornflowerblue;
+  font-family: Arial, sans-serif;
+  background-color: cornflowerblue;
 }
 
 .container {
-    max-width: 600px;
-    margin: 140px auto;
-    padding: 20px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    border: 1px solid black;
+  max-width: 600px;
+  margin: 140px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .progress-bar {
-    height: 10px;
-    margin-bottom: 20px;
-    background-color: aquamarine;
-    border-radius: 10px;
+  height: 10px;
+  margin-bottom: 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
 }
 
 .quiz-slide {
-    display: none;
-    border: 2px dotted black;
-    padding: 10px;
-    border-radius: 10px;
+  display: none;
+  border: 2px dotted black;
+  padding: 10px;
+  border-radius: 10px;
 }
-.quiz-slide:hover{
-    border: 2px solid black;
+.quiz-slide:hover {
+  border: 2px solid black;
 }
 
 .quiz-slide.active {
-    display: block;
+  display: block;
 }
 
 .quiz-slide h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .choices {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .choices label {
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .navigation {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .navigation button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #ddd;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .navigation button:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
-.prev:hover{
-    background-color: yellow;
-    border: 2px solid black;
+.prev:hover {
+  background-color: yellow;
+  border: 2px solid black;
 }
-.next:hover, .submit:hover{
-    background-color: green;
-    color: aliceblue;
-    border: 2px solid black;
+.next:hover,
+.submit:hover {
+  background-color: green;
+  color: aliceblue;
+  border: 2px solid black;
 }
 .result {
-    text-align: center;
-    margin-top: 20px;
+  width: 50%;
+  margin: 5% auto 0;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Arial, sans-serif;
 }
 
 .result h2 {
-    margin-top: 0;
+  margin-top: 0;
+  color: #4caf50;
 }
 
+.result p {
+  margin: 0.5em 0;
+}

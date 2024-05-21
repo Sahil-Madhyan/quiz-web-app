@@ -66,11 +66,24 @@ document.addEventListener("DOMContentLoaded", function () {
     function showResult() {
         calculateScore();
         resultDiv.style.display = "block";
-        if ((score / 5) * 100 >= 60) {
-            scoreSpan.textContent = (score / 5) * 100 + "% 🥳" ;
+
+        var percentage = (score / 5) * 100;
+        var incorrect = 5 - score;
+
+        document.getElementById('score').innerText = score;
+        document.getElementById('correct').innerText = score;
+        document.getElementById('incorrect').innerText = incorrect;
+        document.getElementById('percentage').innerText = percentage;
+
+        var message = document.getElementById('message');
+        if (percentage >= 80) {
+            message.innerText = 'Great job!';
+        } else if (percentage >= 60) {
+            message.innerText = 'Not bad!';
         } else {
-            scoreSpan.textContent = (score / 5) * 100 + "% 😥";
+            message.innerText = 'Better luck next time!';
         }
+
         score = 0;
     }
 
