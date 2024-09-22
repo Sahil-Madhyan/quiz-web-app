@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextButton = document.querySelector(".next");
     const submitButton = document.querySelector(".submit");
     const resultDiv = document.querySelector(".result");
-    const scoreSpan = document.querySelector("#score");
-
+    
     let currentSlide = 0;
     let score = 0;
+    let startTime = Date.now(); // Initialize the start time
 
     function showSlide(n) {
         slides[currentSlide].classList.remove("active");
@@ -67,15 +67,17 @@ document.addEventListener("DOMContentLoaded", function () {
         calculateScore();
         resultDiv.style.display = "block";
 
-        var percentage = (score / 5) * 100;
-        var incorrect = 5 - score;
+        const elapsedTime = Math.floor((Date.now() - startTime) / 1000); // Calculate elapsed time in seconds
+        const percentage = (score / slides.length) * 100;
+        const incorrect = slides.length - score;
 
         document.getElementById('score').innerText = score;
         document.getElementById('correct').innerText = score;
         document.getElementById('incorrect').innerText = incorrect;
-        document.getElementById('percentage').innerText = percentage;
+        document.getElementById('percentage').innerText = percentage.toFixed(2);
+        document.getElementById('time-taken').innerText = elapsedTime + " seconds"; // Display elapsed time
 
-        var message = document.getElementById('message');
+        let message = document.getElementById('message');
         if (percentage >= 80) {
             message.innerText = 'Great job!';
         } else if (percentage >= 60) {
